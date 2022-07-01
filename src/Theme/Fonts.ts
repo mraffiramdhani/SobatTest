@@ -45,10 +45,5 @@ export default function ({ FontSize, Colors }: ThemeVariables) {
     textRight: {
       textAlign: 'right',
     },
-    textSmallBold: {
-      fontFamily: 'Nunito-Bold',
-      fontSize: FontSize.small,
-      color: Colors.text,
-    },
   })
 }

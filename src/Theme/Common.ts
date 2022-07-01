@@ -7,7 +7,7 @@ import { StyleSheet } from 'react-native'
 import buttonStyles from './components/Buttons'
 import { CommonParams } from './theme'
 
-export default function <C>({ Colors, ...args }: CommonParams<C>) {
+export default function <C>({ Colors, FontSize, ...args }: CommonParams<C>) {
   return {
     button: buttonStyles({ Colors, ...args }),
     ...StyleSheet.create({
@@ -26,6 +26,16 @@ export default function <C>({ Colors, ...args }: CommonParams<C>) {
         textAlign: 'center',
         marginTop: 10,
         marginBottom: 10,
+      },
+      textSmallBold: {
+        fontFamily: 'Nunito-Bold',
+        fontSize: FontSize.small,
+        color: Colors.text,
+      },
+      textRegular: {
+        fontFamily: 'Nunito-Regular',
+        fontSize: 14,
+        color: Colors.text,
       },
     }),
   }
